@@ -16,6 +16,9 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA">
         <dc:creator xml:lang="en">Darío Pérez Martín</dc:creator>
         <dc:license xml:lang="en"></dc:license>
+        <dc:rights xml:lang="en">UOCWines is licensed under Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA) license version 4.0.67 https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title xml:lang="en">WinesOntology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
 
@@ -46,6 +49,18 @@
     <!-- http://purl.org/dc/elements/1.1/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
