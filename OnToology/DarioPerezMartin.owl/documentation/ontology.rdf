@@ -1,0 +1,2092 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#"
+     xml:base="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:wines-SPA="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA">
+        <dc:creator xml:lang="en">Darío Pérez Martín</dc:creator>
+        <dc:license xml:lang="en"></dc:license>
+        <dc:rights xml:lang="en">UOCWines is licensed under Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA) license version 4.0.67 https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title xml:lang="en">WinesOntology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#comesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#comesFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <rdfs:comment>it referst to the region where the wine comes from</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#countains -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#countains">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasTheAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasTheAttribute">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T20:14:34Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country"/>
+        <rdfs:comment>it referst to the country where the wine comes from</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isRegionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isRegionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isTheCountryOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isTheCountryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#madeIt -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#madeIt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#wasMadeIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#wasMadeIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <rdfs:comment>it refers to the winery where the wine comes from</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasAcidity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasAcidity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasBody -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasBody">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasNumReviews -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasNumReviews">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Acidity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Acidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:53:11Z</dc:date>
+        <rdfs:comment>the acidity of the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Age -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T20:03:55Z</dc:date>
+        <rdfs:comment>the age of the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Albarino -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Albarino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Bad -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Bad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rating"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Good"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:59:22Z</dc:date>
+        <rdfs:comment>the wine rating is bad</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Body -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:58:36Z</dc:date>
+        <rdfs:comment>the body of the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cabernet_Sauvignon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cabernet_Sauvignon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Chardonnay -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Chardonnay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cheap -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cheap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Price"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Expensive"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:51:40Z</dc:date>
+        <rdfs:comment>the wine&apos;s price is cheap</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isTheCountryOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>country where the wine is made</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Country</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Expensive -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Expensive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Price"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:52:23Z</dc:date>
+        <rdfs:comment>the wine&apos;s price is expensive</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Good -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rating"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:59:19Z</dc:date>
+        <rdfs:comment>the wine rating is good</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Grenache -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Grenache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#HighAcidity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#HighAcidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Acidity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#LowAcidity"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:53:18Z</dc:date>
+        <rdfs:comment>the wine&apos;s acidity is high</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#LowAcidity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#LowAcidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Acidity"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:54:06Z</dc:date>
+        <rdfs:comment>the wine&apos;s acidity is low</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Mencia -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Mencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#MiddleAcidity -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#MiddleAcidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Acidity"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:41:47Z</dc:date>
+        <rdfs:comment>the wine&apos;s acidity is middle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Monastrell -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Monastrell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Montsant_Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Montsant_Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#New -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#New">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Age"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Old"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T20:04:04Z</dc:date>
+        <rdfs:comment>the wine is relatively new</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Old -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Old">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Age"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T20:04:01Z</dc:date>
+        <rdfs:comment>the wine is relatively old</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Price -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:51:25Z</dc:date>
+        <rdfs:comment>the price of the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Priorat_Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Priorat_Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:59:10Z</dc:date>
+        <rdfs:comment>rating of the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isRegionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>region where the wine is made</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Region</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Ribera_Del_Duero_Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Ribera_Del_Duero_Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rioja_White -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rioja_White">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sauvignon_Blanc -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sauvignon_Blanc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sherry -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sherry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SoftBody -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SoftBody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Body"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#StrongBody"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:58:54Z</dc:date>
+        <rdfs:comment>the wine&apos;s body is soft</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sparkling -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sparkling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#StrongBody -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#StrongBody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Body"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:58:48Z</dc:date>
+        <rdfs:comment>the wine&apos;s body is strong</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Syrah -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Syrah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Tempranillo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Tempranillo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Toro_Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Toro_Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Verdejo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Verdejo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#comesFrom"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isFrom"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#wasMadeIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>drink made of grapes juice</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Wine</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T20:07:24Z</dc:date>
+        <rdfs:comment>Attributes for wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"/>
+        <rdfs:comment>the type of the wine</rdfs:comment>
+        <rdfs:comment>wine tipe class</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Wine</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#madeIt"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T19:55:27Z</dc:date>
+        <rdfs:comment>where the wine was made</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Winery</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>root</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Artadi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Artadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:00:57Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#BodegasElNido -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#BodegasElNido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:57:19Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Contino -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Contino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:11:41Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#DonPXConventoSeleccion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#DonPXConventoSeleccion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ToroAlbala"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">398</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.0</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1946</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:07:05Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ElAnejon -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ElAnejon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PagodeCarraovejas"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">454</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.15</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:02:35Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ElNido -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ElNido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#BodegasElNido"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">217</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">195.627</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2018</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:56:17Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:01:54Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#GranReserava -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#GranReserava">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDueroRed"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Matarromera"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">389</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.5</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:16:45Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Matarromera -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Matarromera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:11:32Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Montilla_Moriles -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Montilla_Moriles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T11:39:18Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PagodeCarraovejas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PagodeCarraovejas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:01:31Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Preludio -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Preludio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDueroRed"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SeiSolo"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">388</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31.63</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:15:01Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Reserva -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Reserva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Contino"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">392</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.98</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:11:52Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:04:26Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDueroRed -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDueroRed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:12:44Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SeiSolo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SeiSolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:11:25Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#TesoLaMonja -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#TesoLaMonja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:00:49Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Tinto -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Tinto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Toro"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#TesoLaMonja"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">995.0</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.9</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Toro -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Toro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:04:16Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ToroAlbala -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#ToroAlbala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:01:39Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1793</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">324.95</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2009</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1705</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">692.96</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:17:04Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1309</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">778.06</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:16:58Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1201</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">349.0</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:47:39Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Unico6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">926</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">810.89</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:47:55Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#UnicoReservaEspecialEdicion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#UnicoReservaEspecialEdicion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">643</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">345.0</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:54:05Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Univo4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Univo4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiberaDelDuero"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1209</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">490.0</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</hasYear>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:22:35Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VegaSicilia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:01:04Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VinaElPison -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VinaElPison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+        <comesFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VinoDeEspana"/>
+        <isFrom rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#España"/>
+        <wasMadeIn rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Artadi"/>
+        <hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasAcidity>
+        <hasBody rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasBody>
+        <hasNumReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</hasNumReviews>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">313.5</hasPrice>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.9</hasRating>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VinoDeEspana -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#VinoDeEspana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:04:21Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#White -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"/>
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-27T21:12:38Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez">
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:08:21Z</dc:date>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red">
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T07:57:02Z</dc:date>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed">
+        <dc:creator>dpm24</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-28T08:12:35Z</dc:date>
+        <rdfs:comment>type of wine</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasYear"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#New"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasYear"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Old"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasAcidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#LowAcidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasAcidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#MiddleAcidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasAcidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#HighAcidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasBody"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#StrongBody"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasBody"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SoftBody"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasRating"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Good"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasPrice"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Expensive"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasPrice"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cheap"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasRating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Bad"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
