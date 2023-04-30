@@ -1,0 +1,213 @@
+{
+  "@context" : {
+    "hasPrice" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Age" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Age"
+    },
+    "New" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#New"
+    },
+    "WineType" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineType"
+    },
+    "MiddleAcidity" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#MiddleAcidity"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Winery"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Expensive" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Expensive"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Country"
+    },
+    "Sauvignon_Blanc" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sauvignon_Blanc"
+    },
+    "SoftBody" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#SoftBody"
+    },
+    "WineAttributes" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#WineAttributes"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Mencia" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Mencia"
+    },
+    "Body" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Body"
+    },
+    "Cabernet_Sauvignon" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cabernet_Sauvignon"
+    },
+    "Syrah" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Syrah"
+    },
+    "hasNumReviews" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasNumReviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "HighAcidity" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#HighAcidity"
+    },
+    "PedroXimenez" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#PedroXimenez"
+    },
+    "hasTheAttribute" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasTheAttribute",
+      "@type" : "@id"
+    },
+    "RiojaRed" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#RiojaRed"
+    },
+    "hasAcidity" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasAcidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Rioja_White" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rioja_White"
+    },
+    "Good" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Good"
+    },
+    "Montsant_Red" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Montsant_Red"
+    },
+    "Price" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Price"
+    },
+    "countains" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#countains",
+      "@type" : "@id"
+    },
+    "Ribera_Del_Duero_Red" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Ribera_Del_Duero_Red"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "wasMadeIn" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#wasMadeIn",
+      "@type" : "@id"
+    },
+    "Monastrell" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Monastrell"
+    },
+    "Sherry" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sherry"
+    },
+    "Grenache" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Grenache"
+    },
+    "StrongBody" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#StrongBody"
+    },
+    "Old" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Old"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "hasBody" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasBody",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Bad" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Bad"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Rating"
+    },
+    "isRegionOf" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isRegionOf",
+      "@type" : "@id"
+    },
+    "Red" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Red"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Tempranillo" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Tempranillo"
+    },
+    "isFrom" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isFrom",
+      "@type" : "@id"
+    },
+    "LowAcidity" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#LowAcidity"
+    },
+    "Toro_Red" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Toro_Red"
+    },
+    "Acidity" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Acidity"
+    },
+    "Priorat_Red" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Priorat_Red"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Verdejo"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "Cheap" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Cheap"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isTheCountryOf" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#isTheCountryOf",
+      "@type" : "@id"
+    },
+    "hasYear" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#hasYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "comesFrom" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#comesFrom",
+      "@type" : "@id"
+    },
+    "Sparkling" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Sparkling"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Region"
+    },
+    "madeIt" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#madeIt",
+      "@type" : "@id"
+    },
+    "Chardonnay" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Chardonnay"
+    },
+    "Albarino" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Albarino"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/DarioPerezMartin/ontologies/2023/3/wines-SPA#Wine"
+    }
+  }
+}

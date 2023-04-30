@@ -1,0 +1,48 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wines-SPA1:Sherry" "wines-SPA1:Albarino" "wines-SPA1:Cabernet_Sauvignon" "wines-SPA1:Age" "wines-SPA1:Price" "wines-SPA1:Mencia" "wines-SPA1:Country" "wines-SPA1:Verdejo" "wines-SPA1:Syrah" "wines-SPA1:Wine" "wines-SPA1:Chardonnay" "wines-SPA1:LowAcidity" "wines-SPA1:Cheap" "wines-SPA1:Expensive" "wines-SPA1:Priorat_Red" "wines-SPA1:Sauvignon_Blanc" "wines-SPA1:Monastrell" "wines-SPA1:Montsant_Red" "wines-SPA1:Tempranillo" "wines-SPA1:Rating" "wines-SPA1:Winery" "wines-SPA1:RiojaRed" "wines-SPA1:Good" "wines-SPA1:Region" "wines-SPA1:WineType" "wines-SPA1:Toro_Red" "wines-SPA1:SoftBody" "wines-SPA1:Old" "wines-SPA1:Acidity" "wines-SPA1:New" "wines-SPA1:Red" "wines-SPA1:Ribera_Del_Duero_Red" "wines-SPA1:Grenache" "wines-SPA1:Sparkling" "wines-SPA1:Body" "wines-SPA1:MiddleAcidity" "wines-SPA1:StrongBody" "wines-SPA1:Bad" "wines-SPA1:PedroXimenez" "wines-SPA1:WineAttributes" "wines-SPA1:HighAcidity" "wines-SPA1:Rioja_White" ; /*classes style*/
+	"wines-SPA1:Expensive" -> "wines-SPA1:Price" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Winery" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Monastrell" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:LowAcidity" -> "wines-SPA1:Acidity" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Toro_Red" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Body" -> "wines-SPA1:WineAttributes" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Sherry" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:New" -> "wines-SPA1:Age" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Price" -> "wines-SPA1:WineAttributes" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Priorat_Red" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Wine" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Ribera_Del_Duero_Red" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Albarino" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:PedroXimenez" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Good" -> "wines-SPA1:Rating" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Acidity" -> "wines-SPA1:WineAttributes" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Old" -> "wines-SPA1:Age" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Region" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:HighAcidity" -> "wines-SPA1:Acidity" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Montsant_Red" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Cheap" -> "wines-SPA1:Price" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Red" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:StrongBody" -> "wines-SPA1:Body" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Chardonnay" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:SoftBody" -> "wines-SPA1:Body" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Tempranillo" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Mencia" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:WineAttributes" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Country" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Sparkling" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Sauvignon_Blanc" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Verdejo" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Cabernet_Sauvignon" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Grenache" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:WineType" -> "wines-SPA1:WineAttributes" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Syrah" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Bad" -> "wines-SPA1:Rating" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Rating" -> "wines-SPA1:WineAttributes" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:RiojaRed" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Rioja_White" -> "wines-SPA1:WineType" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:MiddleAcidity" -> "wines-SPA1:Acidity" [ label = "rdfs:subClassOf" ];
+	"wines-SPA1:Age" -> "wines-SPA1:WineAttributes" [ label = "rdfs:subClassOf" ];
+
+}
